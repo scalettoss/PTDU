@@ -1,0 +1,12 @@
+D:\PTDU\PTDU\MyClass\bin\Debug\MyClass.dll.config
+D:\PTDU\PTDU\MyClass\bin\Debug\MyClass.dll
+D:\PTDU\PTDU\MyClass\bin\Debug\MyClass.pdb
+D:\PTDU\PTDU\MyClass\bin\Debug\EntityFramework.dll
+D:\PTDU\PTDU\MyClass\bin\Debug\EntityFramework.SqlServer.dll
+D:\PTDU\PTDU\MyClass\bin\Debug\EntityFramework.xml
+D:\PTDU\PTDU\MyClass\bin\Debug\EntityFramework.SqlServer.xml
+D:\PTDU\PTDU\MyClass\obj\Debug\MyClass.csproj.AssemblyReference.cache
+D:\PTDU\PTDU\MyClass\obj\Debug\MyClass.csproj.CoreCompileInputs.cache
+D:\PTDU\PTDU\MyClass\obj\Debug\MyClass.csproj.CopyComplete
+D:\PTDU\PTDU\MyClass\obj\Debug\MyClass.dll
+D:\PTDU\PTDU\MyClass\obj\Debug\MyClass.pdb
