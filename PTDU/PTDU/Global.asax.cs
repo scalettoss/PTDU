@@ -17,5 +17,9 @@ namespace PTDU
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+        public void Session_Start()
+        {
+            Session["UserId"] = "1";
+        }
     }
 }
