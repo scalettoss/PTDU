@@ -19,7 +19,7 @@ namespace PTDU
         }
         public void Session_Start()
         {
-            Session["UserId"] = "1";
+            Session["UserID"] = "1";
         }
     }
 }

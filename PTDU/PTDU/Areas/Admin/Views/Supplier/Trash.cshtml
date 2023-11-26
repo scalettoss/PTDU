@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<MyClass.Model.Suppliers>
 @*co nhieu hon 1 mau tin thi se su dung IE*@
 @{
-    ViewBag.Title = "Trang chủ nhà cung cấp";
+    ViewBag.Title = "Thùng rác nhà cung cấp";
     Layout = "~/Areas/Admin/Views/Shared/_Layoutadmin.cshtml";
 }
 @section header
@@ -27,11 +27,10 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-md-6">
-                            <strong class="text-danger">Danh mục nhà cung cấp</strong>
+                            <strong class="text-danger">Thùng rác</strong>
                         </div>
                         <div class="col-md-6 text-right">
-                            <a href="@Url.Action("Create","Supplier")" class="btn-sm btn-success"><i class="fa fa-plus"></i> Thêm</a>
-                            <a href="@Url.Action("Trash","Supplier")" class="btn-sm btn-danger"><i class="fa fa-trash"></i> Thùng rác</a>
+                            <a href="@Url.Action("Index","Supplier")" class="btn-sm btn-info"><i class="fa fa-long-arrow-alt-left"></i> Quay về</a>
                         </div>
                     </div>
                 </div>
@@ -66,19 +65,9 @@
                                     <td>@Html.DisplayFor(modelItem => item.Phone)</td>
                                     <td>@Html.DisplayFor(modelItem => item.Email)</td>
                                     <td>
-                                        @if (item.Status == 1)
-                                        {
-                                            <a href="@Url.Action("Status","Supplier", new { id = item.Id })" class="btn-sm btn-success"><i class="fa fa-toggle-on"></i></a>
-                                        }
-                                        else
-                                        {
-                                            <a href="@Url.Action("Status","Supplier", new { id = item.Id })" class="btn-sm btn-danger"><i class="fa fa-toggle-off"></i></a>
-                                        }
-                                        <a href="@Url.Action("Edit","Supplier", new { id = item.Id })" class="btn-sm btn-primary"><i class="fa fa-edit"></i></a>
-                                        <a href="@Url.Action("Details","Supplier", new { id = item.Id })" class="btn-sm btn-info"><i class="fa fa-eye"></i></a>
-                                        <a href="@Url.Action("DelTrash","Supplier", new { id = item.Id })" class="btn-sm btn-danger"><i class="fa fa-trash"></i></a>
+                                        <a href="@Url.Action("Recover","Supplier", new { id = item.Id })" class="btn-sm btn-info"><i class="fa fa-undo"></i></a>
+                                        <a href="@Url.Action("Delete","Supplier", new { id = item.Id })" class="btn-sm btn-danger"><i class="fa fa-trash"></i></a>
                                     </td>
-
                                 </tr>
                             }
                         </tbody>
@@ -89,3 +78,7 @@
         </section><!-- /.content -->
     </div> <!-- /.content-wrapper -->
 </div>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
